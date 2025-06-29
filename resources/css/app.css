@@ -1,0 +1,21 @@
+@import "./normalize.css";
+@import "./webflow.css";
+@import "./alloy-tests.webflow.css";
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+input:focus + label,
+input:valid + label,
+.input.long:focus + label,
+.input.long:valid + label {
+    top: -10px;
+    font-size: 14px;
+    color: #000000;
+    z-index: 3;
+}
+input:-internal-autofill-selected + label,
+input {
+    color: #000000;
+}
